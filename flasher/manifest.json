@@ -1,0 +1,23 @@
+{
+  "name": "MakerWorld Live Monitor",
+  "version": "2.1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "makerworld_monitor_cyd.ino.bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "makerworld_monitor_cyd.ino.partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "makerworld_monitor_cyd.ino.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}
